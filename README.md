@@ -1,2 +1,2 @@
-# learnOpenGL
-# use GLFW, GLAD
+# learnOpenGL https://learnopengl.com/
+ use GLFW, GLAD
