@@ -3,7 +3,7 @@
 
 class Shader
 {
-private:
+public:
 	GLuint m_prorgamID;
 public:
 	Shader(const char* vertexPath, const char* fragmentPath);

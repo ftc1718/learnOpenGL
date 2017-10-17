@@ -47,7 +47,7 @@ int main()
 
 	//std::cout << nrAttributes << std::endl;
 
-	Shader ourShader("src/1.gettingStart/1.4.textures/texture.vs", "src/1.gettingStart/1.4.textures/textureFaceRight.fs");
+	Shader ourShader("src/1.gettingStart/1.4.textures/texture.vs", "src/1.gettingStart/1.4.textures/texture.fs");
 
 	float vertices[] = {
 		//position          //color           //texture
