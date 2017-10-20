@@ -128,17 +128,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\1.gettingStart\1.5.transformations\transformations.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\stb_image.cpp" />
     <ClCompile Include="src\utility\shader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\utility\shader.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\1.gettingStart\1.5.transformations\transformation.fs" />
-    <None Include="src\1.gettingStart\1.5.transformations\transformation.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

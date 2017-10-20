@@ -24,17 +24,10 @@
     <ClCompile Include="src\stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\1.gettingStart\1.5.transformations\transformations.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\utility\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\1.gettingStart\1.5.transformations\transformation.vs" />
-    <None Include="src\1.gettingStart\1.5.transformations\transformation.fs" />
   </ItemGroup>
 </Project>
