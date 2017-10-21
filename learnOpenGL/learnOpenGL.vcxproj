@@ -128,12 +128,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\1.gettingStart\1.7.camera\cameraClassTest.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\stb_image.cpp" />
+    <ClCompile Include="src\utility\camera.cpp" />
     <ClCompile Include="src\utility\shader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\utility\camera.h" />
     <ClInclude Include="src\utility\shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\1.gettingStart\1.7.camera\camera.fs" />
+    <None Include="src\1.gettingStart\1.7.camera\camera.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

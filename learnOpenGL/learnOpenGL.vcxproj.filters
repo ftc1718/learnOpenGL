@@ -24,10 +24,23 @@
     <ClCompile Include="src\stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\utility\camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\1.gettingStart\1.7.camera\cameraClassTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\utility\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\utility\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\1.gettingStart\1.7.camera\camera.fs" />
+    <None Include="src\1.gettingStart\1.7.camera\camera.vs" />
   </ItemGroup>
 </Project>
