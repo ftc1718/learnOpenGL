@@ -1,2 +1,3 @@
-# learnOpenGL https://learnopengl.com/
+# learnOpenGL
+ practice for https://learnopengl.com/
  use GLFW, GLAD, stb_image, glm
