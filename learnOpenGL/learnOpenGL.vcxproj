@@ -18,6 +18,23 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\2.lighting\2.2.basicLighting\Gouraud.cpp" />
+    <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\stb_image.cpp" />
+    <ClCompile Include="src\utility\camera.cpp" />
+    <ClCompile Include="src\utility\shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\utility\camera.h" />
+    <ClInclude Include="src\utility\shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\2.lighting\2.2.basicLighting\Gouraud.fs" />
+    <None Include="src\2.lighting\2.2.basicLighting\Gouraud.vs" />
+    <None Include="src\2.lighting\2.2.basicLighting\lightInViewspace.fs" />
+    <None Include="src\2.lighting\2.2.basicLighting\lightInViewspace.vs" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{49EA9B5C-C1E2-44F1-A474-D009899A57BF}</ProjectGuid>
@@ -127,23 +144,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="src\2.lighting\2.1.colors\color.cpp" />
-    <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\stb_image.cpp" />
-    <ClCompile Include="src\utility\camera.cpp" />
-    <ClCompile Include="src\utility\shader.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\utility\camera.h" />
-    <ClInclude Include="src\utility\shader.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\2.lighting\2.1.colors\object.fs" />
-    <None Include="src\2.lighting\2.1.colors\object.vs" />
-    <None Include="src\2.lighting\2.1.colors\light.fs" />
-    <None Include="src\2.lighting\2.1.colors\light.vs" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

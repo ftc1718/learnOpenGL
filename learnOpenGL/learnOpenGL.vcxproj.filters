@@ -15,34 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\glad.c">
+    <ClCompile Include="src\utility\camera.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\utility\shader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="src\stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\utility\camera.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\2.lighting\2.1.colors\color.cpp">
+    <ClCompile Include="src\2.lighting\2.2.basicLighting\Gouraud.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\utility\shader.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\utility\camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\utility\shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\2.lighting\2.1.colors\light.vs" />
-    <None Include="src\2.lighting\2.1.colors\light.fs" />
-    <None Include="src\2.lighting\2.1.colors\object.fs" />
-    <None Include="src\2.lighting\2.1.colors\object.vs" />
+    <None Include="src\2.lighting\2.2.basicLighting\Gouraud.vs" />
+    <None Include="src\2.lighting\2.2.basicLighting\Gouraud.fs" />
+    <None Include="src\2.lighting\2.2.basicLighting\lightInViewspace.vs" />
+    <None Include="src\2.lighting\2.2.basicLighting\lightInViewspace.fs" />
   </ItemGroup>
 </Project>
