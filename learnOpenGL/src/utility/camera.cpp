@@ -6,7 +6,7 @@ Camera::Camera(const glm::vec3& position /*= glm::vec3(0.0f, 0.0f, 0.0f)*/, cons
 	updateCameraVector();
 }
 
-void Camera::processKeyBoard(cameraMovement direction, float deltaTime)
+void Camera::processKeyboard(cameraMovement direction, float deltaTime)
 {
 	float cameraSpeed = m_movementSpeed * deltaTime;
 	if (direction == FORWARD)
@@ -25,6 +25,9 @@ void Camera::processKeyBoard(cameraMovement direction, float deltaTime)
 	{
 		m_position += cameraSpeed * m_right;
 	}
+
+	//look around while staying on the xz plane; a real FPS camera
+	//m_position.y = 0.0f; 
 }
 
 void Camera::processMouseMovement(float xOffset, float yOffset)

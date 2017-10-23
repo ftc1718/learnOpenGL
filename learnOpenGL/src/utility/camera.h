@@ -33,14 +33,15 @@ private:
 	float m_movementSpeed;
 	float m_mouseSensitivity;
 	float m_zoom;
+
 public:
 	//yaw rotate with y axis, pitch ratate with x axis
 	Camera(const glm::vec3& position = glm::vec3(0.0f, 0.0f, 0.0f), const glm::vec3& front = glm::vec3(0.0f, 0.0f, -1.0f) , const glm::vec3& up = glm::vec3(0.0f, 1.0f, 0.0f), float yaw = YAW, float pitch = PITCH);
 
 	inline float getZoom() const { return m_zoom; }
-	inline const glm::mat4& getViewMatrix() const { return glm::lookAt(m_position, m_position + m_front, m_up); }
+	inline glm::mat4 getViewMatrix() const { return glm::lookAt(m_position, m_position + m_front, m_up); }
 	
-	void processKeyBoard(cameraMovement direction, float deltaTime);
+	void processKeyboard(cameraMovement direction, float deltaTime);
 	void processMouseMovement(float xOffset, float yOffset);
 	void processMouseScroll(float yOffset);
 private:

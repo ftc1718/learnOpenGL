@@ -128,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\1.gettingStart\1.7.camera\cameraClassTest.cpp" />
+    <ClCompile Include="src\2.lighting\2.1.colors\color.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\stb_image.cpp" />
     <ClCompile Include="src\utility\camera.cpp" />
@@ -139,8 +139,10 @@
     <ClInclude Include="src\utility\shader.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\1.gettingStart\1.7.camera\camera.fs" />
-    <None Include="src\1.gettingStart\1.7.camera\camera.vs" />
+    <None Include="src\2.lighting\2.1.colors\object.fs" />
+    <None Include="src\2.lighting\2.1.colors\object.vs" />
+    <None Include="src\2.lighting\2.1.colors\light.fs" />
+    <None Include="src\2.lighting\2.1.colors\light.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -17,5 +17,9 @@ public:
 	void setBool(const GLchar* name, bool value) const;
 	void setInt(const GLchar* name, int value) const;
 	void setFloat(const GLchar* name, float value) const;
-	void setMat4(const GLchar* name, glm::mat4 value) const;
+
+	void setVec3(const GLchar* name, const glm::vec3& value) const;
+	void setVec3(const GLchar* name, float x, float y, float z) const;
+
+	void setMat4(const GLchar* name, const glm::mat4& value) const;
 };
