@@ -27,7 +27,7 @@
     <ClCompile Include="src\stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.lighting\2.2.basicLighting\Gouraud.cpp">
+    <ClCompile Include="src\2.lighting\2.3.materials\materialExercise.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,11 +38,5 @@
     <ClInclude Include="src\utility\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\2.lighting\2.2.basicLighting\Gouraud.vs" />
-    <None Include="src\2.lighting\2.2.basicLighting\Gouraud.fs" />
-    <None Include="src\2.lighting\2.2.basicLighting\lightInViewspace.vs" />
-    <None Include="src\2.lighting\2.2.basicLighting\lightInViewspace.fs" />
   </ItemGroup>
 </Project>

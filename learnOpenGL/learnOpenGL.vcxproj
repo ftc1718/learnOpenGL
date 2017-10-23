@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\2.lighting\2.2.basicLighting\Gouraud.cpp" />
+    <ClCompile Include="src\2.lighting\2.3.materials\materialExercise.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\stb_image.cpp" />
     <ClCompile Include="src\utility\camera.cpp" />
@@ -28,12 +28,6 @@
   <ItemGroup>
     <ClInclude Include="src\utility\camera.h" />
     <ClInclude Include="src\utility\shader.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\2.lighting\2.2.basicLighting\Gouraud.fs" />
-    <None Include="src\2.lighting\2.2.basicLighting\Gouraud.vs" />
-    <None Include="src\2.lighting\2.2.basicLighting\lightInViewspace.fs" />
-    <None Include="src\2.lighting\2.2.basicLighting\lightInViewspace.vs" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
