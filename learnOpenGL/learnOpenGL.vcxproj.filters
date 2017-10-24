@@ -30,7 +30,7 @@
     <ClCompile Include="src\utility\utility.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.lighting\2.4.lightingMaps\emissionMap.cpp">
+    <ClCompile Include="src\2.lighting\2.5.lightCasters\spotLight.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -46,7 +46,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\2.lighting\2.4.lightingMaps\reverseSpec.fs" />
-    <None Include="src\2.lighting\2.4.lightingMaps\emission.fs" />
+    <None Include="src\2.lighting\2.5.lightCasters\flashLight.fs" />
+    <None Include="src\2.lighting\2.5.lightCasters\test.fs" />
+    <None Include="src\2.lighting\2.5.lightCasters\flashLightSoft.fs" />
   </ItemGroup>
 </Project>

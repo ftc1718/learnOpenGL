@@ -39,6 +39,7 @@ public:
 	Camera(const glm::vec3& position = glm::vec3(0.0f, 0.0f, 0.0f), const glm::vec3& front = glm::vec3(0.0f, 0.0f, -1.0f) , const glm::vec3& up = glm::vec3(0.0f, 1.0f, 0.0f), float yaw = YAW, float pitch = PITCH);
 
 	inline float getZoom() const { return m_zoom; }
+	inline const glm::vec3& getFront() const { return m_front; }
 	inline const glm::vec3& getPosition() const { return m_position; }
 	inline glm::mat4 getViewMatrix() const { return glm::lookAt(m_position, m_position + m_front, m_up); }
 	
