@@ -27,7 +27,10 @@
     <ClCompile Include="src\stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.lighting\2.3.materials\materialExercise.cpp">
+    <ClCompile Include="src\utility\utility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\2.lighting\2.4.lightingMaps\emissionMap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,5 +41,12 @@
     <ClInclude Include="src\utility\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\utility\utility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\2.lighting\2.4.lightingMaps\reverseSpec.fs" />
+    <None Include="src\2.lighting\2.4.lightingMaps\emission.fs" />
   </ItemGroup>
 </Project>

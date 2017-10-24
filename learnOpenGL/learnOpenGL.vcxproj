@@ -19,15 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\2.lighting\2.3.materials\materialExercise.cpp" />
+    <ClCompile Include="src\2.lighting\2.4.lightingMaps\emissionMap.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\stb_image.cpp" />
     <ClCompile Include="src\utility\camera.cpp" />
     <ClCompile Include="src\utility\shader.cpp" />
+    <ClCompile Include="src\utility\utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\utility\camera.h" />
     <ClInclude Include="src\utility\shader.h" />
+    <ClInclude Include="src\utility\utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\2.lighting\2.4.lightingMaps\emission.fs" />
+    <None Include="src\2.lighting\2.4.lightingMaps\reverseSpec.fs" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
