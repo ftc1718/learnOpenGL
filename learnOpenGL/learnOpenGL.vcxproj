@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\2.lighting\2.5.lightCasters\spotLight.cpp" />
+    <ClCompile Include="src\2.lighting\2.6.multipleLights\mutipleLightsScene.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\stb_image.cpp" />
     <ClCompile Include="src\utility\camera.cpp" />
@@ -30,11 +30,6 @@
     <ClInclude Include="src\utility\camera.h" />
     <ClInclude Include="src\utility\shader.h" />
     <ClInclude Include="src\utility\utility.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\2.lighting\2.5.lightCasters\flashLight.fs" />
-    <None Include="src\2.lighting\2.5.lightCasters\flashLightSoft.fs" />
-    <None Include="src\2.lighting\2.5.lightCasters\test.fs" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -59,8 +59,9 @@ void main()
 	*/
 
 	//another way to caculate spotlight intensity
-	float p = 50.0f; //聚光灯发出光的聚集程度
-	float intensity = pow(max(dot(lightDir, normalize(-light.direction)), 0.0f), p);
+	float p = 25.0f; //聚光灯发出光的聚集程度
+	float intensity = pow(max(dot(normalize(-light.direction), lightDir), 0.0f), p);
+    ambient  *= intensity;
 	diffuse  *= intensity;
     specular *= intensity;
     

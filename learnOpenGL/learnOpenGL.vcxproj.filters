@@ -30,7 +30,7 @@
     <ClCompile Include="src\utility\utility.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.lighting\2.5.lightCasters\spotLight.cpp">
+    <ClCompile Include="src\2.lighting\2.6.multipleLights\mutipleLightsScene.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,10 +44,5 @@
     <ClInclude Include="src\utility\utility.h">
       <Filter>头文件</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\2.lighting\2.5.lightCasters\flashLight.fs" />
-    <None Include="src\2.lighting\2.5.lightCasters\test.fs" />
-    <None Include="src\2.lighting\2.5.lightCasters\flashLightSoft.fs" />
   </ItemGroup>
 </Project>
