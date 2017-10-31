@@ -36,7 +36,7 @@
     <ClCompile Include="src\utility\model.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\3.modelLoading\3.1.modelLoading\modelLoading.cpp">
+    <ClCompile Include="src\4.advancedOpneGL\4.2.stencilTesting\stencilTesting.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,5 +56,10 @@
     <ClInclude Include="src\utility\model.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\4.advancedOpneGL\4.2.stencilTesting\stencilTesting.vs" />
+    <None Include="src\4.advancedOpneGL\4.2.stencilTesting\stencilTesting.fs" />
+    <None Include="src\4.advancedOpneGL\4.2.stencilTesting\stencilSingleColor.fs" />
   </ItemGroup>
 </Project>
