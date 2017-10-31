@@ -30,7 +30,13 @@
     <ClCompile Include="src\utility\utility.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\2.lighting\2.6.multipleLights\mutipleLightsScene.cpp">
+    <ClCompile Include="src\utility\mesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility\model.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3.modelLoading\3.1.modelLoading\modelLoading.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,6 +48,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\utility\utility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\model.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
