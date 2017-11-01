@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\4.advancedOpneGL\4.2.stencilTesting\stencilTesting.cpp" />
+    <ClCompile Include="src\4.advancedOpneGL\4.3.blending\blendingSorted.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\stb_image.cpp" />
     <ClCompile Include="src\utility\camera.cpp" />
@@ -36,9 +36,9 @@
     <ClInclude Include="src\utility\utility.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\4.advancedOpneGL\4.2.stencilTesting\stencilSingleColor.fs" />
-    <None Include="src\4.advancedOpneGL\4.2.stencilTesting\stencilTesting.fs" />
-    <None Include="src\4.advancedOpneGL\4.2.stencilTesting\stencilTesting.vs" />
+    <None Include="src\4.advancedOpneGL\4.3.blending\blending.fs" />
+    <None Include="src\4.advancedOpneGL\4.3.blending\blending.vs" />
+    <None Include="src\4.advancedOpneGL\4.3.blending\blendingWindow.fs" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
