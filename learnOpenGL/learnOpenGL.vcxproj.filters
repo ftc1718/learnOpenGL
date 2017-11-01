@@ -36,7 +36,7 @@
     <ClCompile Include="src\utility\model.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\4.advancedOpneGL\4.3.blending\blendingSorted.cpp">
+    <ClCompile Include="src\4.advancedOpneGL\4.4.faceCulling\faceCulling.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -58,8 +58,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\4.advancedOpneGL\4.3.blending\blending.vs" />
-    <None Include="src\4.advancedOpneGL\4.3.blending\blending.fs" />
-    <None Include="src\4.advancedOpneGL\4.3.blending\blendingWindow.fs" />
+    <None Include="src\4.advancedOpneGL\4.4.faceCulling\faceCulling.vs" />
+    <None Include="src\4.advancedOpneGL\4.4.faceCulling\faceCulling.fs" />
   </ItemGroup>
 </Project>
