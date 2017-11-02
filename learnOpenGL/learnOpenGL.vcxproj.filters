@@ -36,7 +36,7 @@
     <ClCompile Include="src\utility\model.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\4.advancedOpneGL\4.4.faceCulling\faceCulling.cpp">
+    <ClCompile Include="src\4.advancedOpneGL\4.5.frameBuffers\frameBuffers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -58,7 +58,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\4.advancedOpneGL\4.4.faceCulling\faceCulling.vs" />
-    <None Include="src\4.advancedOpneGL\4.4.faceCulling\faceCulling.fs" />
+    <None Include="src\4.advancedOpneGL\4.5.frameBuffers\kernelEffect.fs" />
   </ItemGroup>
 </Project>
