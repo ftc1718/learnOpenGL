@@ -27,16 +27,16 @@
     <ClCompile Include="src\stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\utility\utility.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\utility\mesh.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\utility\model.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\4.advancedOpneGL\4.5.frameBuffers\frameBuffers.cpp">
+    <ClCompile Include="src\utility\utility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\4.advancedOpneGL\4.6.cubeMap\modelReflect.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,17 +47,22 @@
     <ClInclude Include="src\utility\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\utility\utility.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\utility\mesh.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\utility\model.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\utility\utility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\4.advancedOpneGL\4.5.frameBuffers\kernelEffect.fs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\skybox.fs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\skybox.vs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\enviromentMapping.vs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\enviromentMapping.fs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\objcet.fs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\objcet.vs" />
   </ItemGroup>
 </Project>
