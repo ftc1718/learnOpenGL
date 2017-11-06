@@ -4,16 +4,12 @@
 out vec4 fragColor;
 
 in vec2 texCoords;
-in vec3 normal;
-in vec3 position;
 
-uniform samplerCube skybox;
-uniform vec3 cameraPos;
+//uniform Material material;
+uniform sampler2D texture_diffuse1;
 
 void main()
 {    
-    vec3 I = normalize(position - cameraPos);
-    vec3 R = reflect(I, normalize(normal));
-    fragColor = vec4(texture(skybox, R).rgb, 1.0);
+    fragColor = texture(texture_diffuse1, texCoords);
 }
 

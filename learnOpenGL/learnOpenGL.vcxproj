@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\4.advancedOpneGL\4.6.cubeMap\modelReflect.cpp" />
+    <ClCompile Include="src\4.advancedOpneGL\4.6.cubeMap\cubeMapExercise.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\stb_image.cpp" />
     <ClCompile Include="src\utility\camera.cpp" />
@@ -36,6 +36,9 @@
     <ClInclude Include="src\utility\utility.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\modelReflectMapping.fs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\modelReflect.fs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\modelRefract.fs" />
     <None Include="src\4.advancedOpneGL\4.6.cubeMap\objcet.fs" />
     <None Include="src\4.advancedOpneGL\4.6.cubeMap\objcet.vs" />
     <None Include="src\4.advancedOpneGL\4.6.cubeMap\enviromentMapping.fs" />

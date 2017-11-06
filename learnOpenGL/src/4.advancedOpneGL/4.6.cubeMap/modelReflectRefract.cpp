@@ -174,8 +174,8 @@ int main()
 	unsigned int skyboxTexture = loadCubemap(faces);
 
 	Shader skyboxShader("src/4.advancedOpneGL/4.6.cubeMap/skybox.vs", "src/4.advancedOpneGL/4.6.cubeMap/skybox.fs");
-	Shader ourShader("src/4.advancedOpneGL/4.6.cubeMap/modelLoading.vs", "src/4.advancedOpneGL/4.6.cubeMap/modelLoading.fs");
-	Model ourModel("../res/model/nanosuit.obj");
+	Shader ourShader("src/4.advancedOpneGL/4.6.cubeMap/modelLoading.vs", "src/4.advancedOpneGL/4.6.cubeMap/modelRefract.fs");
+	Model ourModel("../res/model/nanosuit_reflection/nanosuit.obj");
 
 	skyboxShader.use();
 	skyboxShader.setInt("skybox", 0);

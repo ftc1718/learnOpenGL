@@ -36,7 +36,7 @@
     <ClCompile Include="src\utility\utility.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\4.advancedOpneGL\4.6.cubeMap\modelReflect.cpp">
+    <ClCompile Include="src\4.advancedOpneGL\4.6.cubeMap\cubeMapExercise.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -64,5 +64,8 @@
     <None Include="src\4.advancedOpneGL\4.6.cubeMap\enviromentMapping.fs" />
     <None Include="src\4.advancedOpneGL\4.6.cubeMap\objcet.fs" />
     <None Include="src\4.advancedOpneGL\4.6.cubeMap\objcet.vs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\modelReflect.fs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\modelRefract.fs" />
+    <None Include="src\4.advancedOpneGL\4.6.cubeMap\modelReflectMapping.fs" />
   </ItemGroup>
 </Project>

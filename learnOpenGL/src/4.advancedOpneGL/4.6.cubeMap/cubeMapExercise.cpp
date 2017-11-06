@@ -103,10 +103,89 @@ int main()
 		return -1;
 	}
 
-	glEnable(GL_DEPTH_TEST);
+	float skyboxVertices[] = {
+		// positions          
+		-1.0f,  1.0f, -1.0f,
+		-1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+		1.0f,  1.0f, -1.0f,
+		-1.0f,  1.0f, -1.0f,
 
-	Shader ourShader("src/3.modelLoading/3.1.modelLoading/modelLoading.vs", "src/3.modelLoading/3.1.modelLoading/modelLoading.fs");
-	Model ourModel("../res/model/nanosuit/nanosuit.obj");
+		-1.0f, -1.0f,  1.0f,
+		-1.0f, -1.0f, -1.0f,
+		-1.0f,  1.0f, -1.0f,
+		-1.0f,  1.0f, -1.0f,
+		-1.0f,  1.0f,  1.0f,
+		-1.0f, -1.0f,  1.0f,
+
+		1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+
+		-1.0f, -1.0f,  1.0f,
+		-1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f, -1.0f,  1.0f,
+		-1.0f, -1.0f,  1.0f,
+
+		-1.0f,  1.0f, -1.0f,
+		1.0f,  1.0f, -1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		-1.0f,  1.0f,  1.0f,
+		-1.0f,  1.0f, -1.0f,
+
+		-1.0f, -1.0f, -1.0f,
+		-1.0f, -1.0f,  1.0f,
+		1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+		-1.0f, -1.0f,  1.0f,
+		1.0f, -1.0f,  1.0f
+	};
+
+	unsigned int skyboxVAO, skyboxVBO;
+	glGenVertexArrays(1, &skyboxVAO);
+	glGenBuffers(1, &skyboxVBO);
+
+	glBindVertexArray(skyboxVAO);
+	glBindBuffer(GL_ARRAY_BUFFER, skyboxVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), skyboxVertices, GL_STATIC_DRAW);
+
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+
+	glBindVertexArray(0);
+
+	std::vector<std::string> faces
+	{
+		"../res/textures/skybox/lake/right.jpg",
+		"../res/textures/skybox/lake/left.jpg",
+		"../res/textures/skybox/lake/top.jpg",
+		"../res/textures/skybox/lake/bottom.jpg",
+		"../res/textures/skybox/lake/back.jpg",
+		"../res/textures/skybox/lake/front.jpg"
+	};
+
+	unsigned int skyboxTexture = loadCubemap(faces);
+
+	Shader skyboxShader("src/4.advancedOpneGL/4.6.cubeMap/skybox.vs", "src/4.advancedOpneGL/4.6.cubeMap/skybox.fs");
+	Shader ourShader("src/4.advancedOpneGL/4.6.cubeMap/modelLoading.vs", "src/4.advancedOpneGL/4.6.cubeMap/modelReflectMapping.fs");
+	Model ourModel("../res/model/nanosuit_reflection/nanosuit.obj");
+
+	/*skyboxShader.use();
+	skyboxShader.setInt("skybox", 0);
+
+	//firstly skybox bind to GL_TEXTURE0£¬and after model.draw(), GL_TEXTURE0 change to diffuse_texture
+	//wo add skybox to sample, but wo can not find skybox in texture vector after model.draw(). the texture[0] change to diffuse_texture
+	ourShader.use();
+	ourShader.setInt("skybox", 0);*/
+
+	glEnable(GL_DEPTH_TEST);
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -120,18 +199,34 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		ourShader.use();
-		
 		glm::mat4 projection, view;
 		projection = glm::perspective(glm::radians(camera.getZoom()), 800.0f / 600.0f, 0.1f, 100.0f);
 		view = camera.getViewMatrix();
 		ourShader.setMat4("projection", projection);
 		ourShader.setMat4("view", view);
+		ourShader.setVec3("cameraPos", camera.getPosition());
 
 		glm::mat4 model;
 		model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
 		ourShader.setMat4("model", model);
+
+		glActiveTexture(GL_TEXTURE3);
+		ourShader.setInt("skybox", 3);
+		glBindTexture(GL_TEXTURE_CUBE_MAP, skyboxTexture);
 		ourModel.draw(ourShader);
+
+		//draw skybox at last
+		glDepthFunc(GL_LEQUAL);
+		skyboxShader.use();
+		skyboxShader.setMat4("projection", projection);
+		//remove translation from the view matrix
+		skyboxShader.setMat4("view", glm::mat4(glm::mat3(view)));
+		glBindVertexArray(skyboxVAO);
+		glActiveTexture(GL_TEXTURE0);
+		skyboxShader.setInt("skybox", 0);
+		glBindTexture(GL_TEXTURE_CUBE_MAP, skyboxTexture);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
